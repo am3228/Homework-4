@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS tblCitiesImport (
     `fldLat` NUMERIC(6, 4),
     `fldLong` NUMERIC(7, 4),
     `fldCountry` VARCHAR(19) CHARACTER SET utf8,
-    `fldAbreviation` VARCHAR(3) CHARACTER SET utf8,
+    `fldAbbreviation` VARCHAR(3) CHARACTER SET utf8,
     `fldCapitalStatus` VARCHAR(7) CHARACTER SET utf8,
     `fldPopulation` INT
 );
@@ -247,4 +247,3 @@ INSERT INTO tblCitiesImport VALUES
     ('Louisville',38.1663,-85.6485,'United States','USA','NA',1011696),
     ('Cologne',50.93,6.95,'Germany','DEU','NA',1004000),
     ('Qinhuangdao',39.9304,119.62,'China','CHN','NA',1003000);
-{"mode":"full","isActive":false}
