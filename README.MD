@@ -8,4 +8,4 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 ![locahost:5000](screenshots/Sqlshot.png)
 
 ###SQL Data Screenshot
-![pycharm data query](screenshots/img_1.png)
+![pycharm data query](screenshots/Pycharmscreenshot.png)
