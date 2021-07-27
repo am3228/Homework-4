@@ -3,40 +3,40 @@
 <form action="/edit/{{city.id}}" method="post">
     <div class="row">
         <div class="col">
-            <label for="fldName">City Name</label>
-            <input id="fldName" type="text" class="form-control" placeholder="City Name" name="fldName" value="{{city.fldName}}">
+            <label for="cities">City Name</label>
+            <input id="cities" type="text" class="form-control" placeholder="City Name" name="fldName" value="{{city.fldName}}">
         </div>
         <div class="col">
-            <label for="fldAbbreviation">City Abbreviation</label>
-            <input id="fldAbbreviation" type="text" class="form-control" placeholder="City Abbreviation"
-                   name="fldAbbreviation" value="{{city.fldAbbreviation}}">
+            <label for="state_id">State ID</label>
+            <input id="state_id" type="text" class="form-control" placeholder="State ID"
+                   name="state_id" value="{{city.state_id}}">
         </div>
         <div class="col">
-            <label for="fldCountry">City Country</label>
-            <input id="fldCountry" type="text" class="form-control" placeholder="City Country" name="fldCountry" value="{{city.fldCountry}}">
+            <label for="state_name">City State</label>
+            <input id="state_name" type="text" class="form-control" placeholder="City State" name="state_name" value="{{city.state_name}}">
         </div>
     </div>
 
     <div class="row">
         <div class="col">
-            <label for="fldLat">City Latitude</label>
-            <input id="fldLat" type="text" class="form-control" placeholder="City Latitude" name="fldLat" value="{{city.fldLat}}">
+            <label for="lat">City Latitude</label>
+            <input id="lat" type="text" class="form-control" placeholder="City Latitude" name="lat" value="{{city.lat}}">
         </div>
         <div class="col">
-            <label for="fldlong">City Longitude</label>
-            <input id="fldlong" type="text" class="form-control" placeholder="City Longitude" name="fldLong" value="{{city.fldLong}}">
+            <label for="lng">City Longitude</label>
+            <input id="lng" type="text" class="form-control" placeholder="City Longitude" name="lng" value="{{city.lng}}">
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <label for="fldCapitalStatus">Capital Status</label>
+            <label for="county_fips">County Population</label>
 
-            <input id="fldCapitalStatus" type="text" class="form-control" placeholder="Capital Status"
-                   name="fldCapitalStatus" value="{{city.fldCapitalStatus}}">
+            <input id="county_fips" type="text" class="form-control" placeholder="County Population"
+                   name="county_fips" value="{{city.county_fips}}">
         </div>
         <div class="col">
-            <label for="fldPopulation">City Population</label>
-            <input id="fldPopulation" type="text" class="form-control" placeholder="Population" name="fldPopulation" value="{{city.fldPopulation}}">
+            <label for="population">City Population</label>
+            <input id="population" type="text" class="form-control" placeholder="Population" name="population" value="{{city.population}}">
         </div>
     </div>
     <button type="submit" class="btn btn-success">Save</button>
