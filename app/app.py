@@ -69,7 +69,7 @@ def form_insert_post():
     mysql.get_db().commit()
     return redirect("/", code=302)
 
-@app.route('/delete/<int:city_id>', methods=['POST'])
+@app.route('/api/v1/<int:city_id>', methods=['POST'])
 def form_delete_post(city_id):
     cursor = mysql.get_db().cursor()
     sql_delete_query = """DELETE FROM tblCitiesImport WHERE id = %s """
@@ -110,9 +110,13 @@ def api_edit(city_id) -> str:
     return resp
 
 
-@app.route('/api/cities/<int:city_id>', methods=['DELETE'])
+@app.route('/api/v1/cities/<int:city_id>', methods=['DELETE'])
 def api_delete(city_id) -> str:
-    resp = Response(status=210, mimetype='application/json')
+    cursor = mysql.get_db().cursor()
+    sql_delete_query = """DELETE FROM tblCitiesImport WHERE id = %s """
+    cursor.execute(sql_delete_query, city_id)
+    mysql.get_db().commit()
+    resp = Response(status=200, mimetype='application/json')
     return resp
 
 
