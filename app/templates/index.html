@@ -1,29 +1,27 @@
-
 {% extends "layout.html" %}
 {% block content %}
 <table class="table">
     <thead>
     <tr>
-        <th scope="col">City</th>
-        <th scope="col">State ID</th>
-        <th scope="col">City Longitude</th>
-        <th scope="col">City latitude</th>
+        <th scope="col">City Name</th>
+        <th scope="col">Latitude</th>
+        <th scope="col">Longitude</th>
+        <th scope="col">Country</th>
         <th scope="col">Abbreviation</th>
-        <th scope="col">County Population</th>
+        <th scope="col">Capital Status</th>
         <th scope="col">Population</th>
     </tr>
     </thead>
     <tbody>
     {% for city in cities %}
     <tr>
-        <td><a href="view/{{city.id}}">{{ city.city }}</a></td>
-        <td>{{ city.lat }}</td>
-        <td>{{ city.lng }}</td>
-        <td>{{ city.state_id }}</td>
-        <td>{{ city.county_fips }}</td>
-        <td>{{ city.county_name }}</td>
-        <td>{{ city.population }}</td>
-        <td>{{ city.state_name }}</td>
+        <td><a href="view/{{city.id}}">{{ city.fldName }}</a></td>
+        <td>{{ city.fldLat }}</td>
+        <td>{{ city.fldLong }}</td>
+        <td>{{ city.fldCountry }}</td>
+        <td>{{ city.fldAbbreviation }}</td>
+        <td>{{ city.fldCapitalStatus }}</td>
+        <td>{{ city.fldPopulation }}</td>
     </tr>
     {% endfor %}
     </tbody>
