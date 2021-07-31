@@ -1,7 +1,7 @@
 # Project Description
 This project is a duel homework assignment to teach how to get Pycharm setup with Docker, Flask, MySql. Modifications for HW5 are reflected in the files as well as in finalized screenshots of postman in doc. file for POST DELETE GET PUT.
 
-### Creating
+### Homepage with Data
 <img width="1128" alt="Screenshot HW5" src="https://user-images.githubusercontent.com/85464227/127392252-ff6b8d5e-99fd-4e22-a23f-a23b01b99dca.png">
 
 ### View of One Record
